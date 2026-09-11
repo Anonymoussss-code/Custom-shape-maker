@@ -1,18 +1,25 @@
-import turtle
-import time
-turtle.setup(700, 700)
+This is a custom shape maker that uses Turtle in Python. You can customize your shape or even make a pattern by doing changes like the angle of the sides and 
+the pen's size.
 
-win = turtle.Screen()
+The code:
 
-win.title("Shape factory")
 
-t = turtle.Turtle()
 
-t.speed(0)
+    import turtle
+    import time
+    turtle.setup(700, 700)
 
-turtle.bgcolor("Black")
+    win = turtle.Screen()
 
-while True:
+    win.title("Shape factory")
+
+    t = turtle.Turtle()
+
+    t.speed(0)
+
+    turtle.bgcolor("Black")
+
+    while True:
 
     ps = int(input("what pensize do you want?"))
 
@@ -32,8 +39,6 @@ while True:
     for x in range(sid):
         t.rt(k)
         t.fd(100)
-
-
-
+        
     if False:
         turtle.done()
